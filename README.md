@@ -1,9 +1,5 @@
-<h3 align="center">
-  <img
-    src="https://quantaquestapp.com/logo.png"
-    height="200"
-  >
-</h3>
+![cover]([./public/imgs/cover.jpeg](https://github.com/quanta-quest/quanta-quest/blob/main/public/imgs/cover.jpeg))
+
 <div>
   <p align="center">
     <a href="https://x.com/ethanfrostlove">
