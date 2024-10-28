@@ -1,4 +1,5 @@
-![cover]([./public/imgs/cover.jpeg](https://github.com/quanta-quest/quanta-quest/blob/main/public/imgs/cover.jpeg))
+
+![cover](https://github.com/quanta-quest/quanta-quest/blob/main/public/imgs/cover.jpeg)
 
 <div>
   <p align="center">
