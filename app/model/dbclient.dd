@@ -1,0 +1,58 @@
+// package model
+
+// import (
+// 	"fmt"
+// 	"quanta-quest-app/app/utils"
+// 	"sync"
+
+// 	"gorm.io/driver/sqlite"
+// 	"gorm.io/gorm"
+// )
+
+// type DBClient struct {
+// 	DB *gorm.DB
+// }
+
+// var (
+// 	dbClientInstance *DBClient
+// 	once             sync.Once
+// )
+
+// func GetDBClient() *DBClient {
+
+// 	once.Do(func() {
+// 		// var err error
+// 		// db, err := gorm.Open(sqlite.Open(fmt.Sprintf("%s/data.db", utils.NewUtil().GetAppPath())), &gorm.Config{})
+// 		// if err != nil {
+// 		// 	panic("failed to connect database")
+// 		// }
+
+// 		// sqlDB, err := db.DB()
+// 		// if err != nil {
+// 		// 	panic("failed to get database")
+// 		// }
+
+// 		// sqlDB.SetMaxIdleConns(10)
+// 		// sqlDB.SetMaxOpenConns(100)
+// 		// sqlDB.SetConnMaxLifetime(time.Hour)
+
+// 		db, err := gorm.Open(sqlite.Open(fmt.Sprintf("%s/data.db", utils.NewUtil().GetAppPath())), &gorm.Config{})
+// 		if err != nil {
+// 			panic(any("数据库连接失败"))
+// 		}
+
+// 		dbClientInstance = &DBClient{DB: db}
+// 	})
+
+// 	return dbClientInstance
+
+// }
+
+// func (u *DBClient) Db() *gorm.DB {
+// 	return u.DB
+// }
+
+// // Schema 根据model自动建立数据表
+// func (u *DBClient) Schema(dst ...interface{}) {
+// 	_ = u.Db().AutoMigrate(dst...)
+// }

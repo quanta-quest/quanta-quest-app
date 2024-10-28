@@ -1,0 +1,21 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "quanta-quest-app",
+  "outputfilename": "quanta-quest-app",
+  "frontend:install": "pnpm install",
+  "frontend:build": "pnpm build",
+  "frontend:dev:watcher": "pnpm dev",
+  "frontend:dev:serverUrl": "auto",
+  "wailsjsdir": "frontend",
+  "author": {
+    "name": "leozhou",
+    "email": "492753662@qq.com"
+  },
+  "info": {
+    "icon": [
+      "build/appicon.png",
+      "build/appicon.ico",
+      "build/appicon.icns"
+    ]
+  }
+}
